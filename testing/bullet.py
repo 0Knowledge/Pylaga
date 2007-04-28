@@ -96,18 +96,11 @@ class TestingBullet(Bullet):
 	def __init__(self,bulletlist):
 		Bullet.__init__(self,bulletlist)
 		self.x=1
-		self.y=self.plot(self.x)
 		self.bspeed=1
 		self.xspeed=.1
-		
+
 	def update(self):
-		self.y=self.plot(self.x)
-		self.rect.move_ip(self.bspeed,self.y) #remember it STARTS at the highest Y value
+		self.rect.move_ip(0,-1*(self.bspeed)) #remember it STARTS at the highest Y value
 		if self.rect.bottom <= 0 or self.health <= 0:
 			self.parentlist.remove(self)
-		self.x+=self.xspeed
-		
-		
-	def plot(self,x):
-		return -(x**2)
 		
