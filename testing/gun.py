@@ -79,7 +79,7 @@ class TestingGun(Gun):
 	def shoot(self,rect):
 		centerx=rect.centerx
 		centery=rect.centery
-		for x in [2,2,9]:
+		for x in [2,2,5,9]:
 			a=self.bullet(self.gunlist)
 			a.bspeed=x
 			a.set_pos(centerx,centery)
