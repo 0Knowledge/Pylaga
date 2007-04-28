@@ -64,6 +64,17 @@ class TrueBFG(Gun):
 			a.health=2
 			self.gunlist.add(a)
 
+class SpeedAlt(Gun):
+	def shoot(self,rect):
+		centerx=rect.centerx
+		centery=rect.centery
+		for x in [2,2,9]:
+			a=self.bullet(self.gunlist)
+			a.bspeed=x
+			a.set_pos(centerx,centery)
+			a.damage=self.damage
+			self.gunlist.add(a)
+
 class TestingGun(Gun):
 	def shoot(self,rect):
 		centerx=rect.centerx
