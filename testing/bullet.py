@@ -110,6 +110,4 @@ class TestingBullet(Bullet):
 		
 	def plot(self,x):
 		return -(x**2)
-
-#added this just to make sure svn works
 		
