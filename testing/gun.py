@@ -74,6 +74,7 @@ class SpeedAlt(Gun):
 			a.set_pos(centerx,centery)
 			a.damage=self.damage
 			self.gunlist.add(a)
+
 class SwarmGun(Gun):
 	def shoot(self,rect):
 		centerx=rect.centerx
