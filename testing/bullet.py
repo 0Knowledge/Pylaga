@@ -118,7 +118,7 @@ class TestingBullet(Bullet):
 		self.bspeed=.6
 		self.xspeed=.1
 	def update(self):
-		print self.
+		#print self.
 		if self.rect.right <= 500 :
 			if self.rect.right <= 500:
 				self.rect.top -= 8
